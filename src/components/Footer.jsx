@@ -5,7 +5,11 @@ const Footer = () => {
   return (
     <div className="bg-white py-8">
       <div className="w-[80%] mx-auto flex flex-col gap-5 md:items-center md:gap-0 md:flex-row md:justify-between">
-        <h1 className="rubik-700 logo text-primary">PProduct.io</h1>
+        <div>
+          <Link to="/">
+            <h1 className="rubik-700 logo text-primary">PProduct.io</h1>
+          </Link>
+        </div>
         <div className="flex gap-10">
           {pages.map((page, idx) => (
             <Link

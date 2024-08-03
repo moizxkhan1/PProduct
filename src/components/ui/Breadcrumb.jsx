@@ -26,7 +26,9 @@ const Breadcrumb = () => {
 
   return (
     <div className="font-urbanist text-sm font-bold md:text-breadcrumb flex">
-      Product &gt;{" "}
+      <div>
+        <Link to="/bilanz-und-er-erfassen">Product &gt; </Link>
+      </div>
       {path.map((crumb, index) => (
         <span key={index} className="ml-2 flex items-center">
           {index > 0 && <p className="mx-2">/</p>}
