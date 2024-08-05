@@ -23,7 +23,7 @@ const Modal = ({ isOpen, onClose, onUpload }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 top-3 flex items-center justify-center bg-black bg-opacity-50 z-50 font-urbanist text-checkout">
+    <div className="fixed inset-0 top-[-3px] flex items-center justify-center bg-black bg-opacity-50 z-50 font-urbanist text-checkout">
       <div className="bg-white rounded-lg p-6 w-[40%] space-y-6">
         <h2 className="text-xl font-semibold">Upload Files</h2>
         <div className="space-y-6">
