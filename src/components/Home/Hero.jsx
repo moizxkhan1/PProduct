@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import Heading from "../ui/Heading";
 import Input from "../ui/Input";
@@ -44,7 +45,9 @@ const Hero = () => {
               </Input>
             </div>
             <div className="w-full md:w-1/2">
-              <Button type="secondary" text="Weiter" />
+              <Link to="bilanz-und-er-erfassen">
+                <Button type="secondary" text="Weiter" />
+              </Link>
             </div>
           </div>
         </div>

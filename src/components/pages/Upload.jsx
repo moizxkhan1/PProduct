@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Breadcrumb from "../ui/Breadcrumb";
 import Modal from "../Modal";
 import Loader from "../Loader";
+import Button from "../ui/Button";
 
 const UploadPage = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -27,12 +28,11 @@ const UploadPage = () => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-      navigate("/auswertungsbericht");
     }, 3000);
   };
 
   return (
-    <div className="container h-[80vh] py-12 space-y-14">
+    <div className="container min-h-[80vh] py-12 space-y-14">
       <Breadcrumb />
       <div className="w-[90%] md:w-[60%] mx-auto flex flex-col justify-center items-center space-y-12">
         <div
@@ -52,23 +52,30 @@ const UploadPage = () => {
           <div className="space-y-4">
             <p>Logo</p>
             {uploadedLogo ? (
-              <img src={uploadedLogo} alt="logo" className="w-40 h-auto" />
+              <img src={uploadedLogo} alt="logo" className="w-24 h-auto" />
             ) : (
               <p>No logo uploaded</p>
             )}
           </div>
-          <div className="space-y-2">
+          <div className="space-y-3">
             <p>Signature</p>
             {uploadedSignature ? (
               <img
                 src={uploadedSignature}
                 alt="signature"
-                className="w-16 h-auto"
+                className="w-24 h-auto"
               />
             ) : (
               <p>No signature uploaded</p>
             )}
           </div>
+        </div>
+        <div className="w-[85%] md:w-[60%] mx-auto">
+          <Button
+            type="secondary"
+            text="Weiter"
+            onClick={() => navigate("/auswertungsbericht")}
+          />
         </div>
       </div>
       <Modal

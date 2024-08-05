@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import Paragraph from "../ui/Paragraph";
 import Subheading from "../ui/Subheading";
@@ -16,8 +17,11 @@ const Testemonial = () => {
             With lots of unique blocks, you can easily build a page without
             coding. Build your next Audit page.
           </Paragraph>
-
-          <Button text="Get Started" type="primary" />
+          <div>
+            <Link to="bilanz-und-er-erfassen">
+              <Button text="Get Started" type="primary" />
+            </Link>
+          </div>
         </div>
         {/* second */}
         <div className="w-full md:w-[30%]">
