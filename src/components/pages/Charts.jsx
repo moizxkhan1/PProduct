@@ -1,10 +1,10 @@
 import Breadcrumb from "../ui/Breadcrumb";
 import Button from "../ui/Button";
 import ScatterPlot from "../Product/ScatterChart";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 
 const Charts = () => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   const count = [1, 2, 3, 4, 5, 6];
   const dataPoints = [{ x: 140, y: 55 }];
   return (
@@ -18,12 +18,12 @@ const Charts = () => {
           <Button
             type="primary"
             text="Print"
-            onClick={() => navigate("/Checkout")}
+            onClick={() => alert("File will be printed")}
           />
           <Button
             type="primary"
             text="Download"
-            onClick={() => navigate("/Checkout")}
+            onClick={() => alert("File will be downloaded")}
           />
         </div>
       </div>

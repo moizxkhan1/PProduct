@@ -1,6 +1,7 @@
 import Hero from "../Home/Hero.jsx";
 import AboutSection from "../Home/AboutSection.jsx";
 import Timeline from "../Home/Timeline.jsx";
+import Testiomonial from "../Home/Testemonial.jsx";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <div className="container">
         <Hero />
       </div>
+      <Testiomonial />
       <AboutSection />
       <Timeline />
     </div>

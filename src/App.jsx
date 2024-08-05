@@ -5,7 +5,7 @@ import Home from "./components/pages/Home";
 import { Route, Routes } from "react-router-dom";
 import Charts from "./components/pages/Charts";
 import Checkout from "./components/pages/Checkout";
-import DownloadPage from "./components/pages/Download";
+import UploadPage from "./components/pages/Upload";
 
 import "./App.css";
 import Product from "./components/pages/Product";
@@ -19,7 +19,7 @@ function App() {
         <Route path="/bilanz-und-er-erfassen" element={<Product />} />
         <Route path="/auswertungsbericht" element={<Charts />} />
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="/bericht-herunterladen" element={<DownloadPage />} />
+        <Route path="/bericht-herunterladen" element={<UploadPage />} />
       </Routes>
       <Footer />
     </div>

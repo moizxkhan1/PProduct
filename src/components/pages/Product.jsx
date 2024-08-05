@@ -37,7 +37,7 @@ const Product = () => {
         type="secondary"
         text="Weiter"
         onClick={() => {
-          navigate("/auswertungsbericht");
+          navigate("/checkout");
         }}
       />
     </div>
